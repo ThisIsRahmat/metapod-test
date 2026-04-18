@@ -5,7 +5,7 @@ terraform {
       version = "~> 6.0"
     }
   }
-}
+
 
 # Configure the AWS Provider
 provider "aws" {
@@ -16,4 +16,5 @@ provider "aws" {
 backend "s3" {
     bucket = "rahmat-acebook"
     key    = "path/tfstate"
+  }
   }
