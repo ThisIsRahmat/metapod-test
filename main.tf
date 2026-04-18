@@ -7,6 +7,10 @@ terraform {
   }
 
 
+locals {
+  cluster_name = "my-awesome-eks-cluster"
+}
+
 
 backend "s3" {
     bucket = "rahmat-acebook"
