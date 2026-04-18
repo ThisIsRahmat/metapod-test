@@ -7,10 +7,6 @@ terraform {
   }
 
 
-locals {
-  cluster_name = "my-awesome-eks-cluster"
-}
-
 
 backend "s3" {
     bucket = "rahmat-acebook"
@@ -18,6 +14,11 @@ backend "s3" {
     region = "eu-west-2"
   }
   }
+
+
+locals {
+  cluster_name = "my-awesome-eks-cluster"
+}
 
 
 # Configure the AWS Provider
