@@ -8,6 +8,8 @@ module "eks" {
   subnet_ids = data.aws_subnets.vpc_subnets.ids
   vpc_id     = aws_default_vpc.default_vpc.id
 
+  cluster_endpoint_public_access = true
+
   enable_cluster_creator_admin_permissions = true
 
   eks_managed_node_groups = {
